@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Lead-Tacker-App</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="sm:my-5 font-bold text-2xl font-mono sm:pl-4 text-center">
+      <h1>Lead Tracker</h1>
+    </header>
+    <main>
+      <section class="sm:flex sm:justify-center w-auto">
+          <form action="submit" class="border sm:w-2/6 px-2 mx-2 rounded-md bg-white shadow-lg text-lg font-semibold w-auto">
+            <div class="mt-2">
+              <label for=""> Refernce Number:</label>
+              <input name="ref-number" type="text" class="border" />
+            </div>
+            <div class="w-auto">
+              <label for="status"> Status:</label>
+              <select class="border ml-24 mt-2 w-auto" name="status" id="">
+                  <option value="">Accepted</option>
+                  <option value="">Saved</option>
+                  <option value="">Hung-Up</option>
+                  <option value="">Loyalty-Tranfer</option>
+                  <option value="">Parts Call</option>
+                  <option value="">Not Interested</option>
+                  <option value="">No Email</option>
+                  <option value="">No VIN Number (#)</option>
+                  <option value="">Same-Day Request</option>
+                  <option value="">No Offer/No Documents</option>
+                  <option value="">Same-Day Request</option>
+              </select>
+            </div>
+            <div class="mt-2">
+              <label for="offer-amount"> Offer Amount:</label>
+              <input class="border ml-8" name="offer-amount" type="text" />
+            </div>
+            <div class="mt-2">
+              <label for="notes"> Add Notes:</label>
+              <textarea class="border ml-14" name="notes" id="" cols="30" rows="3"></textarea>
+            </div>
+            <div class="my-2">
+                <button id="submit-btn" type="submit" class="border-2 font-bold text-white bg-blue-800 hover:bg-blue-400 rounded-md p-1">Submit</button>
+            </div>
+          </form>
+      </section>
+    </main>
+  </body>
+</html>
